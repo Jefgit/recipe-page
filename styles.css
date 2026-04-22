@@ -41,6 +41,7 @@
   --Brown-800: hsl(14, 45%, 36%);
   --Rose-800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
+  --blue-footer: hsl(228, 45%, 44%);
 }
 
 *,
@@ -129,7 +130,7 @@ section {
 .recipe__information-list li {
   list-style-type: disc;
   color: var(--Rose-800);
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
   line-height: 1rem;
 }
 
@@ -146,11 +147,11 @@ section {
   gap: 0.5rem;
   list-style-type: disc;
   color: var(--Rose-800);
-  padding-left: 2rem;
+  padding-inline-start: 2rem;
 }
 
 .recipe__ingredients-list li {
-  padding-left: 1rem;
+  padding-inline-start: 1rem;
 }
 
 .recipe__instruction-list {
@@ -160,17 +161,17 @@ section {
   flex-direction: column;
   gap: 0.5rem;
   color: var(--Brown-800);
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
 }
 
 .recipe__instruction-list li {
-  padding-left: 1rem;
+  padding-inline-start: 1rem;
 }
 
 .recipe__nutrition-list {
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 }
 
 .recipe__nutrition-list li {
@@ -179,7 +180,7 @@ section {
   justify-items: center;
   gap: clamp(3rem, 0.7999999999999998rem + 11vw, 14rem);
   min-height: 3rem;
-  padding-left: 2rem;
+  padding-inline-start: 2rem;
 }
 
 .recipe__nutrition-list li p {
@@ -221,7 +222,7 @@ section {
 }
 
 section h2:first-child {
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
 
 .recipe__nutrition-list li p:last-of-type {
@@ -230,30 +231,27 @@ section h2:first-child {
 }
 
 .recipe__nutrition-list li:not(:last-child) {
-  border-bottom: 1px solid var(--Stone-600);
+  border-block-end: 1px solid var(--Stone-600);
 }
 
 .recipe section:not(:first-of-type):not(:last-of-type) {
-  border-bottom: 1px solid var(--Stone-600);
-  padding-bottom: 2rem;
+  border-block-end: 1px solid var(--Stone-600);
+  padding-block-end: 2rem;
 }
 
-recipe__nutrition-list li .attribution {
-  font-size: 0.6875rem;
-  text-align: center;
-}
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--blue-footer);
 }
 
 @media (width >= 48em) {
   /* when viewport size is 768px and above */
   body {
-    padding: 10rem 0 10rem 0;
+    padding: 7.5rem 0 7.5rem 0;
     background-color: var(--Stone-100);
   }
 
